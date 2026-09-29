@@ -12,6 +12,7 @@
 - [awesome-uncensored-ai-image-models](https://github.com/Anil-matcha/awesome-uncensored-ai-image-models) — Companion list for image-generation and image-editing models.
 - [awesome-uncensored-ai-video-models](https://github.com/Anil-matcha/awesome-uncensored-ai-video-models) — Companion list for video-generation and video-editing models.
 - [awesome-os-llm](https://github.com/townie/awesome-os-llm) — Broader open-source LLM ecosystem reference.
+- [Abliterated LLM API on MuAPI](https://muapi.ai/abliterated-llm-api) — Access MuAPI's hosted abliterated and low-refusal LLM endpoints through one API.
 
 ## Contents
 
@@ -36,30 +37,50 @@ This is a shortlist for evaluation, not a benchmark ranking. The first group inc
 
 ## Current hosted and community-reported candidates
 
-The following 20 candidates were selected for capability, recency, family coverage, or value. They are not ranked against one another. Thinking modes and alternate serving routes are noted as variants rather than counted as separate model families.
+The following candidates were selected for capability, recency, family coverage, or value. They are not ranked against one another. Thinking modes and alternate serving routes are noted as variants rather than counted as separate model families.
 
-| Model / variant | Family or base | Access / status | Evaluation focus | Primary family source |
-| --- | --- | --- | --- | --- |
-| Abliterated Model Large V2 | GLM-5.3-derived | Hosted variant; verify provenance and availability | Large reasoning, tools, long context | [GLM model family](https://huggingface.co/zai-org) |
-| GLM 5.3 Flash Uncensored | GLM-5.3 Flash | Hosted variant; community-reported | Fast reasoning, coding, tools, vision where supported | [Z.AI models](https://huggingface.co/zai-org) |
-| Qwen 3.8 27B Uncensored | Qwen 3.8 27B | Hosted fine-tune; verify checkpoint | General chat, coding, reasoning, multimodal | [Qwen](https://github.com/QwenLM) |
-| GLM 5.3 Uncensored | GLM-5.3 | Hosted variant; experimental | Full-size reasoning, coding, tool use | [Z.AI models](https://huggingface.co/zai-org) |
-| Qwen 3.8 27B Obliterated | Qwen 3.8 27B | Hosted variant; verify method | Compare refusal-direction ablation with fine-tunes | [Qwen](https://github.com/QwenLM) |
-| MiMo V2.6 Flash Uncensored | MiMo V2.6 Flash | Hosted fine-tune; availability varies | Fast chat, reasoning, tool use | [Xiaomi MiMo](https://github.com/XiaomiMiMo) |
-| MiMo V2.6 Flash Abliterated | MiMo V2.6 Flash | Hosted variant; availability varies | Refusal-direction ablation, reasoning, tools | [Xiaomi MiMo](https://github.com/XiaomiMiMo) |
-| Qwen 3.8 27B Uncensored (TEE route) | Qwen 3.8 27B Uncensored | Hosted route; route-specific privacy claims | Compare serving and privacy properties | [Qwen](https://github.com/QwenLM) |
-| Abliterated Model | GLM-derived multimodal | Hosted variant; verify provenance | Multimodal input, structured output | [Z.AI models](https://huggingface.co/zai-org) |
-| Abliterated Model Large | GLM-5.2-derived | Hosted variant; verify provenance | Large reasoning, tools, long context | [Z.AI models](https://huggingface.co/zai-org) |
-| Gemma 4 26B A4B Uncensored | Gemma 4 26B A4B | Hosted fine-tune; verify checkpoint | MoE reasoning, coding, multimodal | [Gemma](https://ai.google.dev/gemma) |
-| Gemma 4 26B A4B Uncensored (TEE route) | Gemma 4 26B A4B Uncensored | Hosted route; route-specific privacy claims | Compare route and modality support | [Gemma](https://ai.google.dev/gemma) |
-| Gemma 4 31B Gembrain Uncensored Heretic | Gemma 4 31B | Community fine-tune; verify checkpoint | General chat and reasoning | [Gemma](https://ai.google.dev/gemma) |
-| Qwen 3.8 27B Queen | Qwen 3.8 27B | Hosted creative fine-tune | Roleplay and image-aware dialogue | [Qwen](https://github.com/QwenLM) |
-| Qwen 3.8 27B Fable | Qwen 3.8 27B | Hosted creative fine-tune | Storytelling and character work | [Qwen](https://github.com/QwenLM) |
-| Llama 3.3 70B Instruct Abliterated | Llama 3.3 70B | Open-weight checkpoint | General chat; older but established family | [Model card](https://huggingface.co/huihui-ai/Llama-3.3-70B-Instruct-abliterated) |
-| Qwen2.5 32B Instruct Abliterated | Qwen2.5 32B | Open-weight checkpoint | General chat and coding; legacy comparison | [Model card](https://huggingface.co/huihui-ai/Qwen2.5-32B-Instruct-abliterated) |
-| DeepSeek R1 Distill Llama 70B Abliterated | DeepSeek R1 Distill Llama 70B | Open-weight checkpoint | Reasoning-focused comparison | [Model card](https://huggingface.co/huihui-ai/DeepSeek-R1-Distill-Llama-70B-abliterated) |
-| DeepSeek R1 Distill Qwen 32B Abliterated | DeepSeek R1 Distill Qwen 32B | Open-weight checkpoint | Smaller reasoning-focused option | [Model card](https://huggingface.co/huihui-ai/DeepSeek-R1-Distill-Qwen-32B-abliterated) |
-| NeuralDaredevil 8B Abliterated | Llama-family 8B | Open-weight checkpoint | Lightweight local evaluation | [Model card](https://huggingface.co/mlabonne/NeuralDaredevil-8B-abliterated) |
+| Model / variant | Family or base | Access / status | Evaluation focus | Primary family source | Muapi landing page |
+| --- | --- | --- | --- | --- | --- |
+| Abliterated Model Large V2 | GLM-5.3-derived | Hosted variant; verify provenance and availability | Large reasoning, tools, long context | [GLM model family](https://huggingface.co/zai-org) | [Abliterated Model API](https://muapi.ai/abliterated-model-api) |
+| GLM 5.3 Flash Uncensored | GLM-5.3 Flash | Hosted variant; community-reported | Fast reasoning, coding, tools, vision where supported | [Z.AI models](https://huggingface.co/zai-org) | [GLM Abliterated API](https://muapi.ai/glm-abliterated-api) |
+| Qwen 3.8 27B Uncensored | Qwen 3.8 27B | Hosted fine-tune; verify checkpoint | General chat, coding, reasoning, multimodal | [Qwen](https://github.com/QwenLM) | [Qwen Abliterated API](https://muapi.ai/qwen-abliterated-api) |
+| GLM 5.3 Uncensored | GLM-5.3 | Hosted variant; experimental | Full-size reasoning, coding, tool use | [Z.AI models](https://huggingface.co/zai-org) | [GLM Abliterated API](https://muapi.ai/glm-abliterated-api) |
+| Qwen 3.8 27B Obliterated | Qwen 3.8 27B | Hosted variant; verify method | Compare refusal-direction ablation with fine-tunes | [Qwen](https://github.com/QwenLM) | [Qwen Abliterated API](https://muapi.ai/qwen-abliterated-api) |
+| MiMo V2.6 Flash Uncensored | MiMo V2.6 Flash | Hosted fine-tune; availability varies | Fast chat, reasoning, tool use | [Xiaomi MiMo](https://github.com/XiaomiMiMo) | [MiMo Abliterated API](https://muapi.ai/mimo-abliterated-api) |
+| MiMo V2.6 Flash Abliterated | MiMo V2.6 Flash | Hosted variant; availability varies | Refusal-direction ablation, reasoning, tools | [Xiaomi MiMo](https://github.com/XiaomiMiMo) | [MiMo Abliterated API](https://muapi.ai/mimo-abliterated-api) |
+| Qwen 3.8 27B Uncensored (TEE route) | Qwen 3.8 27B Uncensored | Hosted route; route-specific privacy claims | Compare serving and privacy properties | [Qwen](https://github.com/QwenLM) | [Qwen Abliterated API](https://muapi.ai/qwen-abliterated-api) |
+| Abliterated Model | GLM-derived multimodal | Hosted variant; verify provenance | Multimodal input, structured output | [Z.AI models](https://huggingface.co/zai-org) | [Abliterated Model API](https://muapi.ai/abliterated-model-api) |
+| Abliterated Model Large | GLM-5.2-derived | Hosted variant; verify provenance | Large reasoning, tools, long context | [Z.AI models](https://huggingface.co/zai-org) | [Abliterated Model API](https://muapi.ai/abliterated-model-api) |
+| Gemma 4 26B A4B Uncensored | Gemma 4 26B A4B | Hosted fine-tune; verify checkpoint | MoE reasoning, coding, multimodal | [Gemma](https://ai.google.dev/gemma) | [Gemma Abliterated API](https://muapi.ai/gemma-abliterated-api) |
+| Gemma 4 26B A4B Uncensored (TEE route) | Gemma 4 26B A4B Uncensored | Hosted route; route-specific privacy claims | Compare route and modality support | [Gemma](https://ai.google.dev/gemma) | [Gemma Abliterated API](https://muapi.ai/gemma-abliterated-api) |
+| Gemma 4 31B Gembrain Uncensored Heretic | Gemma 4 31B | Community fine-tune; verify checkpoint | General chat and reasoning | [Gemma](https://ai.google.dev/gemma) | [Gemma Abliterated API](https://muapi.ai/gemma-abliterated-api) |
+| Qwen 3.8 27B Queen | Qwen 3.8 27B | Hosted creative fine-tune | Roleplay and image-aware dialogue | [Qwen](https://github.com/QwenLM) | [Qwen Character Chat API](https://muapi.ai/qwen-character-chat-api) |
+| Qwen 3.8 27B Fable | Qwen 3.8 27B | Hosted creative fine-tune | Storytelling and character work | [Qwen](https://github.com/QwenLM) | [Qwen Character Chat API](https://muapi.ai/qwen-character-chat-api) |
+| Llama 3.3 70B Instruct Abliterated | Llama 3.3 70B | Open-weight checkpoint | General chat; older but established family | [Model card](https://huggingface.co/huihui-ai/Llama-3.3-70B-Instruct-abliterated) | [Llama Abliterated API](https://muapi.ai/llama-abliterated-api) |
+| Qwen2.5 32B Instruct Abliterated | Qwen2.5 32B | Open-weight checkpoint | General chat and coding; legacy comparison | [Model card](https://huggingface.co/huihui-ai/Qwen2.5-32B-Instruct-abliterated) | [Qwen Abliterated API](https://muapi.ai/qwen-abliterated-api) |
+| DeepSeek R1 Distill Llama 70B Abliterated | DeepSeek R1 Distill Llama 70B | Open-weight checkpoint | Reasoning-focused comparison | [Model card](https://huggingface.co/huihui-ai/DeepSeek-R1-Distill-Llama-70B-abliterated) | [DeepSeek R1 Abliterated API](https://muapi.ai/deepseek-r1-abliterated-api) |
+| DeepSeek R1 Distill Qwen 32B Abliterated | DeepSeek R1 Distill Qwen 32B | Open-weight checkpoint | Smaller reasoning-focused option | [Model card](https://huggingface.co/huihui-ai/DeepSeek-R1-Distill-Qwen-32B-abliterated) | [DeepSeek R1 Abliterated API](https://muapi.ai/deepseek-r1-abliterated-api) |
+| NeuralDaredevil 8B Abliterated | Llama-family 8B | Open-weight checkpoint | Lightweight local evaluation | [Model card](https://huggingface.co/mlabonne/NeuralDaredevil-8B-abliterated) | [Llama Abliterated API](https://muapi.ai/llama-abliterated-api) |
+
+### Additional hosted variants available through Muapi (2026-09-29)
+
+Muapi currently exposes the following deployed endpoint aliases. The names identify Muapi routes; they do not independently establish the exact upstream derivative, license, or refusal behavior. Those details remain **To verify** where direct sources or reproducible evaluations are unavailable.
+
+| Model / variant | Family or base | Muapi endpoint slug | Status / focus | Primary family source | Muapi landing page |
+| --- | --- | --- | --- | --- | --- |
+| GLM 5.3 Flash Abliterated | GLM 5.3 Flash | `glm-5-3-flash-abliterated` | Muapi hosted endpoint; derivative provenance and behavior to verify | [Z.AI models](https://huggingface.co/zai-org) | [GLM Abliterated API](https://muapi.ai/glm-abliterated-api) |
+| GLM 5.3 Abliterated | GLM 5.3 | `glm-5-3-abliterated` | Muapi hosted endpoint; derivative provenance and behavior to verify | [Z.AI models](https://huggingface.co/zai-org) | [GLM Abliterated API](https://muapi.ai/glm-abliterated-api) |
+| Gemma 4 26B A4B Abliterated | Gemma 4 26B A4B | `gemma-4-26b-a4b-abliterated` | Muapi hosted endpoint; derivative provenance and behavior to verify | [Gemma](https://ai.google.dev/gemma) | [Gemma Abliterated API](https://muapi.ai/gemma-abliterated-api) |
+| Gemma 4 31B Gembrain Abliterated | Gemma 4 31B | `gemma-4-31b-gembrain-abliterated` | Muapi hosted endpoint; checkpoint provenance and behavior to verify | [Gemma](https://ai.google.dev/gemma) | [Gemma Abliterated API](https://muapi.ai/gemma-abliterated-api) |
+| Qwen 3.8 27B Abliterated | Qwen 3.8 27B | `qwen-3-8-27b-abliterated` | Muapi hosted endpoint; ablation method and behavior to verify | [Qwen](https://github.com/QwenLM) | [Qwen Abliterated API](https://muapi.ai/qwen-abliterated-api) |
+| GLM 4.6 Derestricted v5 | GLM 4.6 | `glm-4-6-derestricted-v5` | Muapi hosted endpoint; derivative provenance and behavior to verify | [Z.AI models](https://huggingface.co/zai-org) | [GLM Abliterated API](https://muapi.ai/glm-abliterated-api) |
+| Qwen3.5 27B Queen Derestricted | Qwen3.5 27B | `qwen-3-5-27b-queen-derestricted` | Muapi hosted endpoint; derivative provenance and behavior to verify | [Qwen](https://github.com/QwenLM) | [Qwen Abliterated API](https://muapi.ai/qwen-abliterated-api) |
+| Qwen3.5 27B Blossom Derestricted | Qwen3.5 27B | `qwen-3-5-27b-blossom-derestricted` | Muapi hosted endpoint; derivative provenance and behavior to verify | [Qwen](https://github.com/QwenLM) | [Qwen Abliterated API](https://muapi.ai/qwen-abliterated-api) |
+| Qwen3.5 27B Opus-Distilled Derestricted | Qwen3.5 27B | `qwen-3-5-27b-opus-distilled-derestricted` | Muapi hosted endpoint; distillation provenance and behavior to verify | [Qwen](https://github.com/QwenLM) | [Qwen Abliterated API](https://muapi.ai/qwen-abliterated-api) |
+| Gemma 4 31B SDFT Abliterated | Gemma 4 31B | `gemma-4-31b-sdft-abliterated` | Muapi hosted endpoint; checkpoint provenance and behavior to verify | [Gemma](https://ai.google.dev/gemma) | [Gemma Abliterated API](https://muapi.ai/gemma-abliterated-api) |
+| Venice Abliterated | Venice | `venice-abliterated` | Muapi hosted endpoint; upstream model and behavior to verify | [Venice AI](https://docs.venice.ai/) | [Low-Refusal LLM API](https://muapi.ai/low-refusal-llm-api) |
+
+These aliases may overlap with existing “uncensored” or creative fine-tune entries in family, but they are kept separate because the endpoint names claim different modifications or serving routes. Do not merge them until equivalence is established. The Muapi endpoint slugs are included to identify the deployed routes; consult the [Abliterated LLM API page](https://muapi.ai/abliterated-llm-api) for current access details.
 
 ### Important provenance note
 
