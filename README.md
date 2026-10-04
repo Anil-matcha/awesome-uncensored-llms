@@ -12,6 +12,7 @@
 - [awesome-uncensored-ai-image-models](https://github.com/Anil-matcha/awesome-uncensored-ai-image-models) — Companion list for image-generation and image-editing models.
 - [awesome-uncensored-ai-video-models](https://github.com/Anil-matcha/awesome-uncensored-ai-video-models) — Companion list for video-generation and video-editing models.
 - [awesome-abliterated-llms](https://github.com/Anil-matcha/awesome-abliterated-llms) — Focused developer guide to Muapi's hosted abliterated LLM endpoints, with runnable API examples.
+- [uncensored-coding-models](https://github.com/Anil-matcha/uncensored-coding-models) — Reproducible local coding tasks and separate scoring for code quality and refusal behavior.
 - [awesome-os-llm](https://github.com/townie/awesome-os-llm) — Broader open-source LLM ecosystem reference.
 - [Abliterated LLM API on MuAPI](https://muapi.ai/abliterated-llm-api) — Access MuAPI's hosted abliterated and low-refusal LLM endpoints through one API.
 
