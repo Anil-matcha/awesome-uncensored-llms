@@ -4,7 +4,7 @@
 
 “Uncensored” is not a standardized technical property or a guarantee. Abliteration, fine-tuning, prompting, provider routing, and interface policy can all change refusal behavior. This list documents evidence and provenance instead of treating the label as a promise.
 
-**Last reviewed:** 2026-09-29
+**README reviewed:** 2026-10-06. Individual model availability and provenance still require checking against the linked source.
 
 ## Related Projects
 
@@ -12,8 +12,8 @@
 - [awesome-uncensored-ai-image-models](https://github.com/Anil-matcha/awesome-uncensored-ai-image-models) — Companion list for image-generation and image-editing models.
 - [awesome-uncensored-ai-video-models](https://github.com/Anil-matcha/awesome-uncensored-ai-video-models) — Companion list for video-generation and video-editing models.
 - [awesome-abliterated-llms](https://github.com/Anil-matcha/awesome-abliterated-llms) — Focused developer guide to Muapi's hosted abliterated LLM endpoints, with runnable API examples.
-- [uncensored-coding-models](https://github.com/Anil-matcha/uncensored-coding-models) — Muapi-hosted coding-model benchmark, with Codex, Claude Code, and OpenCode setup guides.
-- [awesome-uncensored-ai-agents](https://github.com/Anil-matcha/awesome-uncensored-ai-agents) — setup and safety guidance for using tool-capable models in general-purpose agents.
+- [Awesome Uncensored Coding Models](https://github.com/Anil-matcha/awesome-uncensored-coding-models) — coding-model directory, candidate use cases, benchmark runner, and coding-agent setup.
+- [Awesome Uncensored AI Agents](https://github.com/Anil-matcha/awesome-uncensored-ai-agents) — setup and safety guidance for using tool-capable models in general-purpose agents.
 - [awesome-os-llm](https://github.com/townie/awesome-os-llm) — Broader open-source LLM ecosystem reference.
 - [Abliterated LLM API on MuAPI](https://muapi.ai/abliterated-llm-api) — Access MuAPI's hosted abliterated and low-refusal LLM endpoints through one API.
 
@@ -22,6 +22,7 @@
 - [How to read this list](#how-to-read-this-list)
 - [Current hosted and community-reported candidates](#current-hosted-and-community-reported-candidates)
 - [Open-weight checkpoints](#open-weight-checkpoints)
+- [Use cases and choosing an access path](#use-cases-and-choosing-an-access-path)
 - [Selection notes](#selection-notes)
 - [Contributing](#contributing)
 - [Responsible use](#responsible-use)
@@ -92,6 +93,31 @@ Several recent hosted names in the table do not have a linked public derivative 
 ## Open-weight checkpoints
 
 Start with the exact model cards linked above. Review each card's license, base-model terms, quantization, and inference template before downloading or redistributing. Abliteration changes weights and behavior; it does not grant rights beyond the original model license.
+
+## Use cases and choosing an access path
+
+This catalog includes different kinds of access and model families. Choose by what you need to do, then verify the exact model and version; a low-refusal report is not a quality score.
+
+| Use case | Access path to consider | Checks before use |
+|---|---|---|
+| **Try a hosted model without managing inference** | A hosted endpoint in the [Muapi abliterated LLM guide](https://github.com/Anil-matcha/awesome-abliterated-llms) or another listed provider. | Exact route/model ID, current availability, price, accepted inputs, output limits, provider terms, and whether the route is a hosted alias. |
+| **Run locally or offline** | An open-weight checkpoint from the table above. | The exact checkpoint card, base and derivative licenses, hardware needs, quantization, inference template, and model behavior on your prompts. |
+| **Compare a modified model with its base** | A checkpoint and its upstream base, or a hosted alias with a supported baseline. | Same prompt, system message, sampling settings, inference path, and version where possible; record any differences you cannot control. |
+| **Evaluate coding or repository work** | Coding-oriented candidates plus a coding-agent integration when tools are required. | Separate model-only code answers from agent tool use. See [Awesome Uncensored Coding Models](https://github.com/Anil-matcha/awesome-uncensored-coding-models). |
+| **Use a general-purpose agent** | A model with verified tool calling connected to a bounded agent stack. | Model capability, endpoint compatibility, agent permissions, confirmation gates, and spend limits. See [Awesome Uncensored AI Agents](https://github.com/Anil-matcha/awesome-uncensored-ai-agents). |
+| **Explore image or video generation** | The relevant companion image or video catalog, not a text model entry. | Exact modality, checkpoint/endpoint, content rules, model license, and whether the claim applies to local weights or a hosted pipeline. |
+| **Study refusal behavior** | Exact base/modified pairs or provider routes with reproducible setup details. | Define benign and safety-control prompts in advance; keep refusal rate separate from correctness, calibration, and task quality. |
+
+### A small evaluation plan
+
+1. Choose a few tasks representative of your intended use, including ordinary tasks and edge cases.
+2. Record the exact model/checkpoint or route, source, access type, version/date, runtime or provider, prompt, and settings.
+3. Use the same setup for a baseline where possible; report unavoidable differences.
+4. Run multiple samples when outputs vary, preserve raw outputs, and include errors or unavailable models.
+5. Score factuality, task completion, instruction following, refusal behavior, latency, and cost as separate measures.
+6. Review model and provider terms before sending private data or relying on a hosted route.
+
+This list is a source-tracked directory, not a certification of models and not a leaderboard. An entry should be treated as a candidate until its exact version and claims have been checked.
 
 ## Selection notes
 
