@@ -16,6 +16,7 @@
 - [Awesome Uncensored AI Agents](https://github.com/Anil-matcha/awesome-uncensored-ai-agents) — setup and safety guidance for using tool-capable models in general-purpose agents.
 - [awesome-os-llm](https://github.com/townie/awesome-os-llm) — Broader open-source LLM ecosystem reference.
 - [Abliterated LLM API on MuAPI](https://muapi.ai/abliterated-llm-api) — Access MuAPI's hosted abliterated and low-refusal LLM endpoints through one API.
+- [Red Team Model Router](https://unst33r.si/pricing) — Hosted OpenAI-compatible API serving abliterated and low-refusal open-weight models (gpt-oss, Llama, Qwen) with documented model catalog, for authorized red-team use.
 
 ## Contents
 
