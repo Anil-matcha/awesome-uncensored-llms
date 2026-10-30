@@ -15,6 +15,7 @@
 - [Awesome Uncensored Coding Models](https://github.com/Anil-matcha/awesome-uncensored-coding-models) — coding-model directory, candidate use cases, benchmark runner, and coding-agent setup.
 - [Awesome Uncensored AI Agents](https://github.com/Anil-matcha/awesome-uncensored-ai-agents) — setup and safety guidance for using tool-capable models in general-purpose agents.
 - [awesome-os-llm](https://github.com/townie/awesome-os-llm) — Broader open-source LLM ecosystem reference.
+- [Outrun uncensored models](https://outrun.to/uncensored-ai-api) — Hosted uncensored and abliterated GLM-5.3, DeepSeek and MiMo routes behind one OpenAI-compatible key, each with its own model page.
 - [Abliterated LLM API on MuAPI](https://muapi.ai/abliterated-llm-api) — Access MuAPI's hosted abliterated and low-refusal LLM endpoints through one API.
 
 ## Contents
