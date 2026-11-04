@@ -86,6 +86,24 @@ Muapi currently exposes the following deployed endpoint aliases. The names ident
 
 These aliases may overlap with existing “uncensored” or creative fine-tune entries in family, but they are kept separate because the endpoint names claim different modifications or serving routes. Do not merge them until equivalence is established. The Muapi endpoint slugs are included to identify the deployed routes; consult the [Abliterated LLM API page](https://muapi.ai/abliterated-llm-api) for current access details.
 
+### Additional hosted routes available through UberLLM (2026-11-04)
+
+[UberLLM](https://uberllm.dev/uncensored-llm-api) exposes the following model IDs through one OpenAI-compatible (`https://api.uberllm.dev/v1/chat/completions`, `/v1/responses`) and Anthropic-compatible (`/v1/messages`) API key, prepaid per token. Each request is served by a third-party seller through its own provider account, so the IDs identify UberLLM routes; they do not independently establish the exact upstream derivative, license, or refusal behavior. Those details remain **To verify**. All IDs returned `available: true` from `GET https://api.uberllm.dev/v1/models/<id>` on 2026-11-04. Disclosure: this section was added by the UberLLM team.
+
+| Model / variant | Family or base | UberLLM model ID | Status / focus | Primary family source | UberLLM model page |
+| --- | --- | --- | --- | --- | --- |
+| DeepSeek V4.1 Flash Uncensored | DeepSeek V4.1 Flash | `deepseek/deepseek-v4.1-flash-uncensored` | UberLLM hosted route; derivative provenance, license and behavior to verify | [DeepSeek](https://huggingface.co/deepseek-ai) | [Model page](https://uberllm.dev/models/deepseek/deepseek-v4.1-flash-uncensored) |
+| Gemma 4 Uncensored | Gemma 4 | `google/gemma-4-uncensored` | UberLLM hosted route; derivative provenance, license and behavior to verify | [Gemma](https://ai.google.dev/gemma) | [Model page](https://uberllm.dev/models/google/gemma-4-uncensored) |
+| GLM 4.7 Flash Heretic | GLM 4.7 Flash | `z-ai/glm-4.7-flash-heretic` | UberLLM hosted route; derivative provenance, license and behavior to verify | [Z.AI models](https://huggingface.co/zai-org) | [Model page](https://uberllm.dev/models/z-ai/glm-4.7-flash-heretic) |
+| Venice Uncensored 1.1 | Venice | `venice/uncensored` | UberLLM hosted route; derivative provenance, license and behavior to verify | [Venice AI](https://docs.venice.ai/) | [Model page](https://uberllm.dev/models/venice/uncensored) |
+| Venice Uncensored 1.2 | Venice | `venice/uncensored-1.2` | UberLLM hosted route; derivative provenance, license and behavior to verify | [Venice AI](https://docs.venice.ai/) | [Model page](https://uberllm.dev/models/venice/uncensored-1.2) |
+| Venice Role Play Uncensored | Venice | `venice/uncensored-role-play` | UberLLM hosted route; derivative provenance, license and behavior to verify | [Venice AI](https://docs.venice.ai/) | [Model page](https://uberllm.dev/models/venice/uncensored-role-play) |
+| Qwen 3.6 Plus Uncensored | Qwen 3.6 Plus | `qwen/qwen3.6-plus-uncensored` | UberLLM hosted route; derivative provenance, license and behavior to verify | [Qwen](https://github.com/QwenLM) | [Model page](https://uberllm.dev/models/qwen/qwen3.6-plus-uncensored) |
+| Abliterated Large Flash | Unknown (Abliteration.ai model) | `abliteration-ai/abliteration-abliterated-model-large-flash` | UberLLM hosted route; derivative provenance, license and behavior to verify | [Abliteration.ai](https://abliteration.ai) | [Model page](https://uberllm.dev/models/abliteration-ai/abliteration-abliterated-model-large-flash) |
+| Abliterated Large V2 | Unknown (Abliteration.ai model) | `abliteration-ai/abliteration-abliterated-model-large-v2` | UberLLM hosted route; derivative provenance, license and behavior to verify | [Abliteration.ai](https://abliteration.ai) | [Model page](https://uberllm.dev/models/abliteration-ai/abliteration-abliterated-model-large-v2) |
+
+Do not treat these routes as equivalent to similarly named Muapi aliases or open-weight checkpoints until equivalence is established. Current prices and availability: [UberLLM models](https://uberllm.dev/models) or the machine-readable [llms.txt](https://uberllm.dev/llms.txt).
+
 ### Important provenance note
 
 Several recent hosted names in the table do not have a linked public derivative model card in this catalog. Their base-family links are not proof of the derivative's provenance, license, or behavior. Keep them marked as hosted/community-reported until a direct source and reproducible evaluation are available. Do not infer a model's local weights from an API name.
