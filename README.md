@@ -64,6 +64,7 @@ The following candidates were selected for capability, recency, family coverage,
 | Qwen2.5 32B Instruct Abliterated | Qwen2.5 32B | Open-weight checkpoint | General chat and coding; legacy comparison | [Model card](https://huggingface.co/huihui-ai/Qwen2.5-32B-Instruct-abliterated) | [Qwen Abliterated API](https://muapi.ai/qwen-abliterated-api) |
 | DeepSeek R1 Distill Llama 70B Abliterated | DeepSeek R1 Distill Llama 70B | Open-weight checkpoint | Reasoning-focused comparison | [Model card](https://huggingface.co/huihui-ai/DeepSeek-R1-Distill-Llama-70B-abliterated) | [DeepSeek R1 Abliterated API](https://muapi.ai/deepseek-r1-abliterated-api) |
 | DeepSeek R1 Distill Qwen 32B Abliterated | DeepSeek R1 Distill Qwen 32B | Open-weight checkpoint | Smaller reasoning-focused option | [Model card](https://huggingface.co/huihui-ai/DeepSeek-R1-Distill-Qwen-32B-abliterated) | [DeepSeek R1 Abliterated API](https://muapi.ai/deepseek-r1-abliterated-api) |
+| DeepSeek V4.1 Flash 1017 EZO Uncensored | DeepSeek-V4.1-Flash-1017 | Open-weight checkpoint | Large MoE reasoning, tools, vision; refusal and capability measured against stock | [Model card](https://huggingface.co/ezolabs/DeepSeek-v4.1-v1017-Flash-EZO-UNCENSORED) | — |
 | NeuralDaredevil 8B Abliterated | Llama-family 8B | Open-weight checkpoint | Lightweight local evaluation | [Model card](https://huggingface.co/mlabonne/NeuralDaredevil-8B-abliterated) | [Llama Abliterated API](https://muapi.ai/llama-abliterated-api) |
 
 ### Additional hosted variants available through Muapi (2026-09-29)
