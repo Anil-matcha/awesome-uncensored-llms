@@ -9,6 +9,7 @@
 ## Related Projects
 
 - [awesome-uncensored-ai-models](https://github.com/Anil-matcha/awesome-uncensored-ai-models) — Entry point to the LLM, image, and video catalogs.
+- [Spicy Lab](https://spicyapi.app) — Independent comparison site with an uncensored LLM / chat-model leaderboard (plus NSFW image and video rankings) and published methodology; not a generator.
 - [awesome-uncensored-ai-image-models](https://github.com/Anil-matcha/awesome-uncensored-ai-image-models) — Companion list for image-generation and image-editing models.
 - [awesome-uncensored-ai-video-models](https://github.com/Anil-matcha/awesome-uncensored-ai-video-models) — Companion list for video-generation and video-editing models.
 - [awesome-abliterated-llms](https://github.com/Anil-matcha/awesome-abliterated-llms) — Focused developer guide to Muapi's hosted abliterated LLM endpoints, with runnable API examples.
