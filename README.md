@@ -16,6 +16,7 @@
 - [Awesome Uncensored AI Agents](https://github.com/Anil-matcha/awesome-uncensored-ai-agents) — setup and safety guidance for using tool-capable models in general-purpose agents.
 - [awesome-os-llm](https://github.com/townie/awesome-os-llm) — Broader open-source LLM ecosystem reference.
 - [Abliterated LLM API on MuAPI](https://muapi.ai/abliterated-llm-api) — Access MuAPI's hosted abliterated and low-refusal LLM endpoints through one API.
+- [InterOdin](https://interodin.com/en) — Hosted OpenAI-compatible API for Odin v1, a low-refusal model for security research; base model and weights not disclosed (affiliated listing).
 
 ## Contents
 
