@@ -45,6 +45,7 @@ The following candidates were selected for capability, recency, family coverage,
 
 | Model / variant | Family or base | Access / status | Evaluation focus | Primary family source | Muapi landing page |
 | --- | --- | --- | --- | --- | --- |
+| RawMind AI | Independent reasoning base | Hosted web interface (Free) | Reasoning, chat, image & video synthesis | [RawMind](https://rawmind.app) | N/A |
 | Abliterated Model Large V2 | GLM-5.3-derived | Hosted variant; verify provenance and availability | Large reasoning, tools, long context | [GLM model family](https://huggingface.co/zai-org) | [Abliterated Model API](https://muapi.ai/abliterated-model-api) |
 | GLM 5.3 Flash Uncensored | GLM-5.3 Flash | Hosted variant; community-reported | Fast reasoning, coding, tools, vision where supported | [Z.AI models](https://huggingface.co/zai-org) | [GLM Abliterated API](https://muapi.ai/glm-abliterated-api) |
 | Qwen 3.8 27B Uncensored | Qwen 3.8 27B | Hosted fine-tune; verify checkpoint | General chat, coding, reasoning, multimodal | [Qwen](https://github.com/QwenLM) | [Qwen Abliterated API](https://muapi.ai/qwen-abliterated-api) |
