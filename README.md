@@ -87,6 +87,17 @@ Muapi currently exposes the following deployed endpoint aliases. The names ident
 
 These aliases may overlap with existing “uncensored” or creative fine-tune entries in family, but they are kept separate because the endpoint names claim different modifications or serving routes. Do not merge them until equivalence is established. The Muapi endpoint slugs are included to identify the deployed routes; consult the [Abliterated LLM API page](https://muapi.ai/abliterated-llm-api) for current access details.
 
+### Open-weight abliterated checkpoints with a hosted route (checked 2026-11-26)
+
+Both entries below have public weights and model cards that record the method and a before/after evaluation. The hosted route is listed separately from the weights.
+
+| Model / variant | Exact checkpoint | Base model | Modification | License | Reported evaluation (from the model card) | Hosted route |
+| --- | --- | --- | --- | --- | --- | --- |
+| Inkling 2 Small Uncensored | [OpenUncensored/Inkling-2-Small-Uncensored](https://huggingface.co/OpenUncensored/Inkling-2-Small-Uncensored) | [thinkingmachines/Inkling-2-Small-MXFP8](https://huggingface.co/thinkingmachines/Inkling-2-Small-MXFP8) | Refusal-direction ablation, rank-2 subspace over layers 9 to 47 | Apache 2.0 (same as base) | Community-reported: refusals on 32 harmful prompts 31 → 0 (chat) and 32 → 0 (thinking); MMLU 90.44% → 90.35% (1,140 questions) | [OpenUncensored](https://openuncensored.com) API, model ID `inkling-2-small-uncensored` |
+| Inkling 2 Mini Uncensored | [OpenUncensored/Inkling-2-Mini-Uncensored](https://huggingface.co/OpenUncensored/Inkling-2-Mini-Uncensored) | [thinkingmachines/Inkling-2-Mini](https://huggingface.co/thinkingmachines/Inkling-2-Mini) | Refusal-direction ablation, attention-only, late-layer subspace | Apache 2.0 (same as base) | Community-reported: refusals on 32 harmful prompts 32 → 0 (chat and thinking); MMLU 78.95% → 79.47% (1,140 questions) | [OpenUncensored](https://openuncensored.com) API, model ID `inkling-2-mini-uncensored` |
+
+The prompt sets, refusal definition and edit recipe are on each model card. Sample sizes are small (32 to 80 prompts), so treat differences of a few prompts as noise.
+
 ### Important provenance note
 
 Several recent hosted names in the table do not have a linked public derivative model card in this catalog. Their base-family links are not proof of the derivative's provenance, license, or behavior. Keep them marked as hosted/community-reported until a direct source and reproducible evaluation are available. Do not infer a model's local weights from an API name.
